@@ -56,5 +56,5 @@ def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
             plaintext += i
         break
     return plaintext
-print(encrypt_vigenere('ATTACKATDAWN', 'LEMONLEMONLE'))
-print(decrypt_vigenere('LXFOPVEFRNHR','LEMONLEMONLE'))
+print(encrypt_vigenere(input(),input()))
+print(decrypt_vigenere(input(),input()))
