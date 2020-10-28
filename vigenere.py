@@ -26,8 +26,6 @@ def encrypt_vigenere(plaintext: str, keyword: str) -> str:
         elif i in b:
             for j in range (len(cip)):
                 ciphertext += b[(indc[j] + cip[j])%len(b)]
-        else:
-            ciphertext += i
         break
     return ciphertext
 def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
@@ -52,8 +50,6 @@ def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
         elif i in b:
             for j in range (len(cip)):
                 plaintext += b[(indp[j] - pla[j])%len(b)]
-        else:
-            plaintext += i
         break
     return plaintext
 print(encrypt_vigenere(input(),input()))
